@@ -1,0 +1,424 @@
+@charset "UTF-8";
+/* put this in .obsidian/snippets/ and enable it via settings > appearance > snippets */
+/* it works best alongside the "Things" theme as it overwrites some of those defaults */
+body {
+    --blue: #4a8ae4;
+    --pink: #ed71db;
+    --green: #c438bd;
+    --red: #c13041;
+    --orange: #fa99cd;
+    --purple: #826FF2;
+    --cyan: #0093bc;
+    --yellow: #ffcd61;
+    --aqua: #56b6c2;
+    --dark-purple: #40368b;
+    --greyish: #293860;
+    --background-obsidian: #ed71db;
+    --mermaid-background: #293860;
+  
+    --h1-color: var(--pink);
+    --h2-color: var(--purple);
+    --h3-color: var(--blue);
+    --h4-color: var(--cyan);
+    --h5-color: var(--green);
+    --h6-color: var(--text-muted);
+  
+    --strong-color: var(--pink);
+    --em-color: var(--pink);
+    --quote-color: var(--green);
+
+    --tag-background-color-d: var(--greyish);
+    --tag-font-color-d: var(--text-muted);
+
+    --code-normal: var(--aqua);
+
+    --inline-title-margin-bottom: 0;
+    --h1-size: 1.4rem;
+    --h1-weight: 400;
+    --inline-title-weight: 400;
+    --h2-size: 1.2rem;
+    --h2-weight: 400;
+    --h3-size: 1.2rem;
+    --h3-weight: 400;
+    --h4-size: 1.2rem;
+    --h4-weight: 400;
+    --h5-size: 1.2rem;
+    --h5-weight: 400;
+    --h6-size: 1.2rem;
+    --h6-weight: 400;
+
+    --line-height-normal: 1.5rem;
+    --line-height-tight: 1rem;
+    --bullet-size: 1.2rem;
+    /* --bullet-line-height: 1.5rem; */
+}
+
+.theme-dark,
+body.theme-dark.is-mobile {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: var(--red);
+  --color-green-rgb: 68, 207, 110;
+  --color-green: var(--green);
+  --color-orange: var(--orange);
+  --color-yellow: var(--yellow);
+  --color-cyan: var(--cyan);
+  --color-blue: var(--blue);
+  --color-purple: var(--purple);
+  --color-pink: var(--pink);
+  --color-aqua: var(--aqua);
+
+  --atom-gray-1: #5c6370;
+  --atom-gray-2: #abb2bf;
+  --atom-red: var(--red);
+  --atom-orange: var(--orange);
+  --atom-green: var(--green);
+  --atom-aqua: var(--aqua);
+  --atom-purple: var(--purple);
+  --atom-blue: var(--blue);
+  --atom-yellow: var(--yellow);
+  --list-marker-color: var(--pink);
+  --list-marker-color-collapsed: var(--blue);
+  --checkbox-border-color: var(--pink);
+}
+
+input[data-task='a']:checked,
+li[data-task='a'] > input:checked,
+li[data-task='a'] > p > input:checked,
+input[data-task='A']:checked,
+li[data-task='A'] > input:checked,
+li[data-task='A'] > p > input:checked,
+input[data-task='b']:checked,
+li[data-task='b'] > input:checked,
+li[data-task='b'] > p > input:checked,
+input[data-task='B']:checked,
+li[data-task='B'] > input:checked,
+li[data-task='B'] > p > input:checked,
+input[data-task='c']:checked,
+li[data-task='c'] > input:checked,
+li[data-task='c'] > p > input:checked,
+input[data-task='C']:checked,
+li[data-task='C'] > input:checked,
+li[data-task='C'] > p > input:checked,
+input[data-task='e']:checked,
+li[data-task='e'] > input:checked,
+li[data-task='e'] > p > input:checked,
+input[data-task='E']:checked,
+li[data-task='E'] > input:checked,
+li[data-task='E'] > p > input:checked,
+input[data-task='f']:checked,
+li[data-task='f'] > input:checked,
+li[data-task='f'] > p > input:checked,
+input[data-task='F']:checked,
+li[data-task='F'] > input:checked,
+li[data-task='F'] > p > input:checked,
+input[data-task='i']:checked,
+li[data-task='i'] > input:checked,
+li[data-task='i'] > p > input:checked,
+input[data-task='I']:checked,
+li[data-task='I'] > input:checked,
+li[data-task='I'] > p > input:checked,
+input[data-task='l']:checked,
+li[data-task='l'] > input:checked,
+li[data-task='l'] > p > input:checked,
+input[data-task='L']:checked,
+li[data-task='L'] > input:checked,
+li[data-task='L'] > p > input:checked,
+input[data-task='m']:checked,
+li[data-task='m'] > input:checked,
+li[data-task='m'] > p > input:checked,
+input[data-task='M']:checked,
+li[data-task='M'] > input:checked,
+li[data-task='M'] > p > input:checked,
+input[data-task='r']:checked,
+li[data-task='r'] > input:checked,
+li[data-task='r'] > p > input:checked,
+input[data-task='R']:checked,
+li[data-task='R'] > input:checked,
+li[data-task='R'] > p > input:checked,
+input[data-task='s']:checked,
+li[data-task='s'] > input:checked,
+li[data-task='s'] > p > input:checked,
+input[data-task='S']:checked,
+li[data-task='S'] > input:checked,
+li[data-task='S'] > p > input:checked,
+input[data-task='w']:checked,
+li[data-task='w'] > input:checked,
+li[data-task='w'] > p > input:checked,
+input[data-task='W']:checked,
+li[data-task='W'] > input:checked,
+li[data-task='W'] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentColor;
+  -webkit-mask-size: var(--checkbox-icon);
+  mask-size: var(--checkbox-icon);  
+  -webkit-mask-position: 50% 50%;
+  mask-position: 50% 50%;  
+}
+
+input[data-task='?']:checked,
+li[data-task='?'] > input:checked,
+li[data-task='?'] > p > input:checked {
+  background-color: var(--color-purple);
+  border-color: var(--color-purple);
+}
+
+input[data-task='a']:checked,
+li[data-task='a'] > input:checked,
+li[data-task='a'] > p > input:checked,
+input[data-task='A']:checked,
+li[data-task='A'] > input:checked,
+li[data-task='A'] > p > input:checked {
+  color: var(--color-blue);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='2 2 21 21' fill='none'%3E %3Cpath stroke='currentColor' stroke-linecap='round' stroke-width='1.4' d='M8.7 8.7c1.1-1 2.2-2 3.3-2.7m0 0c3.1-2 6-2.6 7.4-1.3 1.8 1.8 0 6.6-4 10.7-4.1 4-8.9 5.8-10.7 4C3.4 18 4 15.2 6 12m6-6C9 4 6 3.3 4.7 4.6c-1.8 1.8 0 6.6 4 10.7M12 6c1.2.7 2.3 1.7 3.4 2.7m2.7 3.4c2 3 2.6 6 1.3 7.3C18 20.7 15 20 12 18m2-6a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z' /%3E %3C/svg%3E");
+}
+
+input[data-task='B']:checked,
+li[data-task='B'] > input:checked,
+li[data-task='B'] > p > input:checked,
+input[data-task='b']:checked,
+li[data-task='b'] > input:checked,
+li[data-task='b'] > p > input:checked {
+  color: var(--color-red);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='3 3 19 19' fill='none' stroke='currentColor' stroke-width='1.4' stroke-linecape='round' stroke-linejoin='round'%3E %3Cpath stroke='none' d='M0 0h24v24H0z' fill='none' /%3E %3Cpath d='M9 9v-1a3 3 0 0 1 6 0v1' /%3E %3Cpath d='M8 9h8a6 6 0 0 1 1 3v3a5 5 0 0 1 -10 0v-3a6 6 0 0 1 1 -3' /%3E %3Cpath d='M3 13l4 0' /%3E %3Cpath d='M17 13l4 0' /%3E %3Cpath d='M12 20l0 -6' /%3E %3Cpath d='M4 19l3.35 -2' /%3E %3Cpath d='M20 19l-3.35 -2' /%3E %3Cpath d='M4 7l3.75 2.4' /%3E %3Cpath d='M20 7l-3.75 2.4' /%3E %3C/svg%3E");
+}
+
+input[data-task='c']:checked,
+li[data-task='c'] > input:checked,
+li[data-task='c'] > p > input:checked,
+input[data-task='C']:checked,
+li[data-task='C'] > input:checked,
+li[data-task='C'] > p > input:checked {
+  color: var(--color-orange);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='w-5 h-5' viewBox='3 2 20 20' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath stroke='none' fill='none' d='M0 0h24v24H0z' /%3E %3Cpath d='M7 8l-4 4l4 4' /%3E %3Cpath d='M17 8l4 4l-4 4' /%3E %3Cpath d='M14 4l-4 16' /%3E %3C/svg%3E");
+}
+
+input[data-task='e']:checked,
+li[data-task='e'] > input:checked,
+li[data-task='e'] > p > input:checked
+input[data-task='E']:checked,
+li[data-task='E'] > input:checked,
+li[data-task='E'] > p > input:checked {
+  color: var(--color-purple);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='1 1 22 22' fill='none' stroke='currentColor' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath stroke='none' d='M0 0h24v24H0z' fill='none' /%3E %3Cpath d='M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z' /%3E %3Cpath d='M3 7l9 6l9 -6' /%3E %3C/svg%3E");
+}
+
+input[data-task='F']:checked,
+li[data-task='F'] > input:checked,
+li[data-task='F'] > p > input:checked,
+input[data-task='f']:checked,
+li[data-task='f'] > input:checked,
+li[data-task='f'] > p > input:checked {
+  color: var(--color-red);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='4 5 17 17' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath stroke='none' d='M0 0h24v24H0z' fill='none' /%3E %3Cpath d='M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z' /%3E %3C/svg%3E");
+}
+
+.theme-dark input[data-task='i']:checked,
+.theme-dark li[data-task='i'] > input:checked,
+.theme-dark li[data-task='i'] > p > input:checked,
+input[data-task='i']:checked,
+li[data-task='i'] > input:checked,
+li[data-task='i'] > p > input:checked
+input[data-task='I']:checked,
+li[data-task='I'] > input:checked,
+li[data-task='I'] > p > input:checked {
+  color: var(--color-yellow);
+  background-image: none;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='3 3 20 20' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath stroke='none' d='M0 0h24v24H0z' fill='none' /%3E %3Cpath d='M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7' /%3E %3Cpath d='M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3' /%3E %3Cpath d='M9.7 17l4.6 0' /%3E %3C/svg%3E");
+}
+
+input[data-task='L']:checked,
+li[data-task='L'] > input:checked,
+li[data-task='L'] > p > input:checked,
+input[data-task='l']:checked,
+li[data-task='l'] > input:checked,
+li[data-task='l'] > p > input:checked {
+  color: var(--color-red);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='1 1 22 22' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath stroke='none' d='M0 0h24v24H0z' fill='none' /%3E %3Cpath d='M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0' /%3E %3Cpath d='M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z' /%3E %3C/svg%3E");
+}
+
+input[data-task='M']:checked,
+li[data-task='M'] > input:checked,
+li[data-task='M'] > p > input:checked,
+input[data-task='m']:checked,
+li[data-task='m'] > input:checked,
+li[data-task='m'] > p > input:checked {
+  color: var(--color-blue);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 1 22 22' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'>%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none' /%3E %3Cpath d='M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0' /%3E %3Cpath d='M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2' /%3E %3Cpath d='M16 3.13a4 4 0 0 1 0 7.75' /%3E %3Cpath d='M21 21v-2a4 4 0 0 0 -3 -3.85' /%3E %3C/svg%3E");
+}
+
+input[data-task='r']:checked,
+li[data-task='r'] > input:checked,
+li[data-task='r'] > p > input:checked,
+input[data-task='R']:checked,
+li[data-task='R'] > input:checked,
+li[data-task='R'] > p > input:checked {
+  color: var(--color-orange);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='2 2 20 20' fill='none'  stroke='currentColor'  stroke-width='1.4'  stroke-linecap='round'  stroke-linejoin='round'%3E %3Cpath stroke='none' d='M0 0h24v24H0z' fill='none' /%3E %3Cpath d='M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z' /%3E %3Cpath d='M19 16h-12a2 2 0 0 0 -2 2' /%3E %3Cpath d='M9 8h6' /%3E %3C/svg%3E");
+}
+
+input[data-task='s']:checked,
+li[data-task='s'] > input:checked,
+li[data-task='s'] > p > input:checked,
+input[data-task='S']:checked,
+li[data-task='S'] > input:checked,
+li[data-task='S'] > p > input:checked,
+.theme-dark input[data-task='s']:checked,
+.theme-dark li[data-task='s'] > input:checked,
+.theme-dark li[data-task='s'] > p > input:checked,
+.theme-dark input[data-task='S']:checked,
+.theme-dark li[data-task='S'] > input:checked,
+.theme-dark li[data-task='S'] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  background-image: none;
+  color: var(--color-aqua);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='2 2 20 20' fill='none' stroke='currentColor' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath stroke='none' d='M0 0h24v24H0z' fill='none' /%3E %3Cpath d='M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0' /%3E %3Cpath d='M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0' /%3E %3Cpath d='M17 17h-11v-14h-2' /%3E %3Cpath d='M6 5l14 1l-1 7h-13' /%3E %3C/svg%3E");
+}
+
+input[data-task='x']:checked,
+li[data-task='x'] > input:checked,
+li[data-task='x'] > p > input:checked,
+input[data-task='X']:checked,
+li[data-task='X'] > input:checked,
+li[data-task='X'] > p > input:checked {
+  background-color: var(--text-faint);
+  border-color: var(--text-faint);
+}
+
+input[data-task='w']:checked,
+li[data-task='w'] > input:checked,
+li[data-task='w'] > p > input:checked,
+input[data-task='W']:checked,
+li[data-task='W'] > input:checked,
+li[data-task='W'] > p > input:checked {
+  color: var(--color-yellow);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='2 2 21 21' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath stroke='none' d='M0 0h24v24H0z' fill='none' /%3E %3Cpath d='M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0' /%3E %3Cpath d='M21 21l-6 -6' /%3E %3C/svg%3E");
+}
+
+body:not(.tasks) li[data-task='a'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='A'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='b'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='B'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='c'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='C'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='e'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='E'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='f'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='F'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='i'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='I'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='l'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='L'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='m'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='M'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='r'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='R'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='s'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='S'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='w'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='W'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='x'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='X'].task-list-item.is-checked {
+  color: var(--text-normal);
+}
+
+.markdown-preview-view ul > li.task-list-item.is-checked,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'] {
+  text-decoration: line-through;
+}
+
+div.internal-embed.markdown-embed.inline-embed.is-loaded,
+div.embed-title.markdown-embed-title,
+div.internal-embed.markdown-embed.inline-embed.is-loaded h2,
+div.internal-embed.markdown-embed.inline-embed.is-loaded ul {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+div.internal-embed.markdown-embed.inline-embed.is-loaded ul {
+  margin-left: 1.7em;
+}
+
+/* condense line spacing on file explorer title list. also avoids character-level word breaks */
+.nav-file-title-content,
+.search-result-file-title,
+.search-result-file-match {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: normal !important;
+    word-break: keep-all;
+}
+
+.list-bullet {
+  font-family: monospace;
+  font-size: var(--bullet-size);
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header {
+  padding-bottom: 0.3rem !important;
+}
+
+.cm-quote {
+  color: var(--color-blue) !important;
+}
+
+.mermaid {
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  /* background-color: var(--mermaid-background); */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.mermaid::-webkit-scrollbar {
+  display: none;
+}
+
+.mermaid svg {
+  /* overflow: scroll; */
+  max-width: 100% !important;
+  min-width: 300px !important;
+  height: auto;
+}
+
+.mermaid .loopLine {
+  stroke: var(--color-orange) !important;
+}
+
+.loopText > tspan {
+  fill: var(--color-orange) !important;
+}
+
+.day {
+  padding: 1px !important;
+}
+
+.nav > .title > .month, .nav > .title > .year {
+  font-size: 1.1rem !important;
+}
+
+.right-nav > .arrow > svg {
+  width: 0.8rem !important;
+  height: 0.8rem !important;
+}
+
+.right-nav > .arrow {
+  width: 14px !important;
+}
+
+#calendar-container > .nav {
+  margin: 0.2rem 0 !important;
+  padding: 2px !important;
+}
+
+table.calendar {
+  table-layout: fixed !important;
+}
+
+.calendar-links > .tree-item > .tree-item-self > .tree-item-icon > svg {
+  color: var(--color-blue) !important;
+}
